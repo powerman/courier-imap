@@ -3,7 +3,7 @@
 ## Setup
 
 ```
-sudo apt-get install wget lsb-release gnupg
+sudo apt-get install -y wget lsb-release gnupg
 wget -q -O - http://powerman.github.io/courier-imap/public.key | gpg --dearmor | sudo tee /etc/apt/keyrings/courier-imap.gpg >/dev/null
 echo "deb [signed-by=/etc/apt/keyrings/courier-imap.gpg] https://powerman.github.io/courier-imap/apt/$(lsb_release -cs) $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/courier-imap.list
 apt-get update
@@ -27,6 +27,15 @@ apt-get install libcourier-auth \
 
 ```
 apt-get install courier-imap
+```
+
+To enable TLS:
+
+```
+apt-get install -y gnutls-bin
+/usr/lib/courier-imap/share/mkdhparams
+/usr/lib/courier-imap/share/mkimapdcert
+/usr/lib/courier-imap/share/mkpop3dcert
 ```
 
 ## Package list
