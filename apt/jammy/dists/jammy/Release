@@ -1,0 +1,21 @@
+Origin: Powerman
+Label: courier-imap
+Suite: stable
+Codename: jammy
+Version: 22.04
+Date: Thu, 02 Feb 2023 12:02:48 UTC
+Architectures: amd64
+Components: main
+Description: Ubuntu 22.04 repository for Courier-IMAP
+MD5Sum:
+ 8f660174977960e7c2b1dabf50dd3e97 10738 main/binary-amd64/Packages
+ 172ce572cca6c9d9edc0eda8657cb0b5 2862 main/binary-amd64/Packages.gz
+ 59210555b2c5d0de12624f2aad84c371 158 main/binary-amd64/Release
+SHA1:
+ 1369b9633710c33077ec3d45808f1f09dc078d54 10738 main/binary-amd64/Packages
+ 260d20588cfb1289933811c6599b421e36e2a5fd 2862 main/binary-amd64/Packages.gz
+ b1d41cc2b5c6ff9826c16ab00b9f7fe7dc75e2e0 158 main/binary-amd64/Release
+SHA256:
+ 07f152e96e6ad3fe81795dd5feb0e3d6936e0a2369fe04d6499926b52ea9220c 10738 main/binary-amd64/Packages
+ 4076debceaa26b472e94a70169a5167e61f5d725ce66eb5f7665ef49487a3fd0 2862 main/binary-amd64/Packages.gz
+ 4dd5121c4d6bcf5c649154e014e4ba8a3030c539c103ca19b166ed2714a57276 158 main/binary-amd64/Release

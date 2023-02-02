@@ -1,0 +1,7 @@
+Archive: stable
+Version: 22.04
+Component: main
+Origin: Powerman
+Label: courier-imap
+Architecture: amd64
+Description: Ubuntu 22.04 repository for Courier-IMAP
