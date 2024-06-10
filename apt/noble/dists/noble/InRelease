@@ -1,0 +1,44 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Origin: Powerman
+Label: courier-imap
+Suite: stable
+Codename: noble
+Version: 24.04
+Date: Mon, 10 Jun 2024 08:53:24 UTC
+Architectures: amd64
+Components: main
+Description: Ubuntu 24.04 repository for Courier-IMAP
+MD5Sum:
+ a12f5ec6b8cc575912445587cff9e4f1 13911 main/binary-amd64/Packages
+ f96d78336297dc41341d7493ab9328a1 4242 main/binary-amd64/Packages.gz
+ 3f7e5240359df6d11f14b79382c5a14f 158 main/binary-amd64/Release
+SHA1:
+ f7275280695832a970ebfd4659875b0875c28d46 13911 main/binary-amd64/Packages
+ 03db93696d3ea32f37c69604c6a646cc4be0eca3 4242 main/binary-amd64/Packages.gz
+ 6ce381e25f0ba5804326e756febb9b83c684a297 158 main/binary-amd64/Release
+SHA256:
+ cf5546dbddc0725d613b0bd8e71ae2a1f5ff3880dc6ec086490739ffd506d8ef 13911 main/binary-amd64/Packages
+ 669761f55322896550357e05cfe2b75c5466b8c7c61a8374f8b595bc9f7ec6d6 4242 main/binary-amd64/Packages.gz
+ 72687861739dfe87e1a2b3eda6722bb0e1f2dbf47716e2623f2229235d6fb699 158 main/binary-amd64/Release
+SHA512:
+ 31688b8d829f1f2969f78aa70147b7969b4345dcde10dc86baf9587efd3df987c5f3161e466de38da881f07be43252c1878b414c133473b651594141abfc90c0 13911 main/binary-amd64/Packages
+ 8549cb5fb8018b077dd1b9944d6a33611ecee16f14cf8e9d1bb63453d22df3d9f33fb9b0f81996f95d934d3ec19fdcd736da0e5080c69d95d135f191ac0513d1 4242 main/binary-amd64/Packages.gz
+ e5de94691ccb3e9236ecbc593aa841aac789368b7528bf157d840b62cc204ea9f9435ab663165b987a8739c86408294e5f7d6c903b10f8de94505856a061a5db 158 main/binary-amd64/Release
+-----BEGIN PGP SIGNATURE-----
+
+iQIzBAEBCgAdFiEEN87U7h+JhAuqpdH12ZlO1xpuGZQFAmZmvwQACgkQ2ZlO1xpu
+GZRFpw/8CDB3WcN4QFXoR8css9tWUQx4id2HmUqTnROvtCb3Gsmhi4KyDLCV2vDw
+Ll9c/mf4v8Ly42RfPS4xZggo0b22uG3Yrn/fr0Gd5N4On++G3iX3Jzq85WWWVOc2
+CBPXY78YEhIaTtUM4kYDy2VHoPOPJ71/EcN66yo4sK8CIPvaKuFjToRUfxFuVDwX
+T5JAPjMvvEkT5hCIX2cOSbXy0UraFH/qzeP1SAAifw8bKxZNX3tNDKW5Mq3M+Ybn
++FXhmnX6xv7CxPIS8a1MiTmxwMQyh8xA6AiLh0+PY8JxIu3kiQHbWmdRJg5T4UMJ
+HZfkbCOMQZM6okFW6rR2+hn+BMnGAjfIme36TThdXdG1+V3M2rf8UAaONPKM/KzA
+AprRmrDuaKE4JHDRQGzkTn5LQqEG+6gOfEShG6/SGfx66MkrOVvc4yGxXLE0WC0g
+s0N+VzkPAzzQ0ZAZxWY23uqayXFUDaEI+xnygYbRjkIOAYhqRGoqGnHOXoTjn+np
+1h9SMufp6oJeOAxJH3i4O6tEymp8OvL1eKB8GKf5xzKR7L2OfLMIdaCywP1sOczN
+QeaC6LeE2OH9MfvY5p6x6O/KMEUPz6yKZOoSggDVTrHsCHwVQPJm7A3u3io+fCRk
+uUtyiFUMRlk5uPjNTW65YfYz2XZZlUGB7oBxbRmEvsKKFsLt3mo=
+=M5q5
+-----END PGP SIGNATURE-----

@@ -1,0 +1,289 @@
+Package: courier-imap
+Version: 5.2.6-100
+Architecture: amd64
+Maintainer: Sam Varshavchik <mrsam@courier-mta.com>
+Installed-Size: 937
+Depends: libc6 (>= 2.38), libcourier-auth0 (>= 0.72.1), libcourier-unicode8 (>= 2.3.0), libgcc-s1 (>= 3.3.1), libgdbm6t64 (>= 1.16), libgnutls30t64 (>= 3.8.2), libidn2-0 (>= 2.0.0), libpcre2-8-0 (>= 10.22), libstdc++6 (>= 5.2)
+Conflicts: courier-imapd, courier-pop3d
+Homepage: https://www.courier-mta.org/imap/
+Priority: optional
+Section: contrib/admin
+Filename: pool/main/c/courier-imap/courier-imap_5.2.6-100_amd64.deb
+Size: 402242
+SHA512: f66a0f16789a33b3dfd87e49ab7aa5db1bccb0ae859cdd9338a3a6acb36978fe37d9b20362a17ac44f764c1ead64e107bee646ff057d0374940af46f5e65b952
+SHA256: 4428fe51da7dccff04583187c09520622e6f0054587bd60f7ce0dbae0ba6f062
+SHA1: 019c8ba570a65182d6b0965722cb22fdbe47e982
+MD5sum: a2bf12921fedd875bf2084236ca74b92
+Description: Maildir IMAP Server
+ Courier-IMAP is an IMAP server for Maildir mailboxes.  This package contains
+ the standalone version of the IMAP server that's included in the Courier
+ mail server package.  This package is a standalone version for use with
+ other mail servers.  Do not install this package if you intend to install the
+ full Courier mail server.  Install the Courier package instead.
+
+Package: libcourier-auth
+Source: courier-authlib
+Version: 0.72.1-100
+Architecture: amd64
+Maintainer: Sam Varshavchik <mrsam@courier-mta.com>
+Installed-Size: 389
+Pre-Depends: libcourier-auth-config-daemon-daemon
+Depends: libc6 (>= 2.34), libcourier-auth0 (= 0.72.1-100), libgdbm6t64 (>= 1.16), libltdl7 (>= 2.4.7), libpam0g (>= 0.99.7.1), libstdc++6 (>= 13.1), expect, systemd
+Homepage: https://www.courier-mta.org/courier-authlib/
+Priority: optional
+Section: contrib/admin
+Filename: pool/main/c/courier-authlib/libcourier-auth_0.72.1-100_amd64.deb
+Size: 120206
+SHA512: 399b23fb2ffb6000c5e7a70f046e45654a5581e25b6ebfe6c45c6b8e768a80c8552b762e06680e87cbb6b13233acd520390739ed8f96e396f7de9d3319f40b46
+SHA256: 4e4373602013f2c7979a5f0fb79c8d68e6999d4c5c2ddbc8129fb4b40857b71a
+SHA1: 2112a34663bb5babd687c30bd24471ef0c2dcb30
+MD5sum: a91f3575b9e509bb8e749fdf6bbb74a2
+Description: Courier authentication library
+ The Courier authentication library provides authentication services for
+ other Courier applications.
+
+Package: libcourier-auth-config-daemon-daemon
+Source: courier-authlib
+Version: 0.72.1-100
+Architecture: amd64
+Maintainer: Sam Varshavchik <mrsam@courier-mta.com>
+Installed-Size: 17
+Provides: libcourier-auth-uidgid
+Homepage: https://www.courier-mta.org/courier-authlib/
+Priority: optional
+Section: contrib/admin
+Filename: pool/main/c/courier-authlib/libcourier-auth-config-daemon-daemon_0.72.1-100_amd64.deb
+Size: 2476
+SHA512: b0e5c239457dd1c3aac980321e1224c79a8d51656c7568396c6e7e4818ef7c4fd6c3aa8b1cf77bfeca8d3e1807c5ebb6951a459aeb2e45b83b92db1a49509e14
+SHA256: 122c45d49eadcc03d7bd03b6e822fb221519eb7dfb47f26957fd5264e6fb48d5
+SHA1: 0dbcda04c0c817f15d9a825fbe1911b21c4e2fde
+MD5sum: cc2e8cd9efe8e2b99e248a260b2f33be
+Description: Courier authentication library build configuration
+ This libcourier-auth package was configured to use system
+ user "daemon" and system group "daemon".
+ .
+ This config sub-package ensures that this user/group exists,
+ and prevents unintentional libcourier-auth updates to versions
+ that were built with a different user/group configuration.
+
+Package: libcourier-auth-dev
+Source: courier-authlib
+Version: 0.72.1-100
+Architecture: amd64
+Maintainer: Sam Varshavchik <mrsam@courier-mta.com>
+Installed-Size: 171
+Pre-Depends: libcourier-auth-config-daemon-daemon
+Depends: libcourier-auth (= 0.72.1-100), libc6 (>= 2.34)
+Homepage: https://www.courier-mta.org/courier-authlib/
+Priority: optional
+Section: contrib/libdevel
+Filename: pool/main/c/courier-authlib/libcourier-auth-dev_0.72.1-100_amd64.deb
+Size: 39654
+SHA512: b9b668d871fa514bfce185496435b8994410b755a4f032ec206b069fc1d787f9631252b0868dcce188b931b3056f468ffaa2084f6314549c385dded1a4137f2b
+SHA256: d870e0c163e1da0cc0178d72668ef446f73c28016eff655145e3788806410014
+SHA1: c61d7c8998cd67f25c564f595cae1edb725c83ec
+MD5sum: 4596ecbca6a3839121d399d67684f43c
+Description: Courier authentication library (development and header files)
+ This package contains the development libraries and files needed to compile
+ Courier packages that use this authentication library.  Install this
+ package in order to build the rest of the Courier packages.  After they are
+ built and installed this package can be removed.  Files in this package
+ are not needed at runtime.
+
+Package: libcourier-auth-ldap
+Source: courier-authlib
+Version: 0.72.1-100
+Architecture: amd64
+Maintainer: Sam Varshavchik <mrsam@courier-mta.com>
+Installed-Size: 119
+Pre-Depends: libcourier-auth-config-daemon-daemon
+Depends: libcourier-auth (= 0.72.1-100), libc6 (>= 2.38), libcourier-auth0 (>= 0.72.1), libgcc-s1 (>= 3.0), libldap2 (>= 2.6.2), libstdc++6 (>= 11)
+Homepage: https://www.courier-mta.org/courier-authlib/
+Priority: optional
+Section: contrib/admin
+Filename: pool/main/c/courier-authlib/libcourier-auth-ldap_0.72.1-100_amd64.deb
+Size: 39766
+SHA512: 7e80fb860262edadf049ab9356ef19e10008f118a4d428b8b94704c4276a3a32f4dc386659d3e5155251495692f474fb56b3b78900c3fda5275720e93fdf8cca
+SHA256: a85d2b68900c45c632f94d7827780c0ed01682dac8af6fa0b501f6250ea668c9
+SHA1: 5802efecd556117a754fdf68e91c2989e29494ae
+MD5sum: 1f8c554c678ee25d19bf0d8178ae9f0a
+Description: LDAP support for the Courier authentication library
+ This package installs the LDAP support for the Courier authentication
+ library.  Install this package in order to be able to authenticate with LDAP.
+
+Package: libcourier-auth-mysql
+Source: courier-authlib
+Version: 0.72.1-100
+Architecture: amd64
+Maintainer: Sam Varshavchik <mrsam@courier-mta.com>
+Installed-Size: 103
+Pre-Depends: libcourier-auth-config-daemon-daemon
+Depends: libcourier-auth (= 0.72.1-100), libc6 (>= 2.14), libcourier-auth0 (>= 0.72.1), libgcc-s1 (>= 3.0), libmariadb3 (>= 3.0.0), libstdc++6 (>= 13.1)
+Homepage: https://www.courier-mta.org/courier-authlib/
+Priority: optional
+Section: contrib/admin
+Filename: pool/main/c/courier-authlib/libcourier-auth-mysql_0.72.1-100_amd64.deb
+Size: 31308
+SHA512: 6f8020dd20f07af2e3afaad20e56f4b5c6add052da5efd8c8a8bc985728c5e31b5cbe38b80b22dace9959d0e938998fb0bbeb747794702f0929931dc5f7361b9
+SHA256: cd32f8e8714c152f83b78ad34a7d7343cd39f7cc1019f0b9c804a192d013c9f3
+SHA1: 7ace4fa83266c91b1b710e5b23264bd674de484a
+MD5sum: e05eae1e932a0384a351ca72afae4222
+Description: Mysql (MariaDB) support for the Courier authentication library
+ This package installs the Mysql (MariaDB) support for the Courier
+ authentication library.  Install this package in order to be able to
+ authenticate with Mysql (MariaDB).
+
+Package: libcourier-auth-pgsql
+Source: courier-authlib
+Version: 0.72.1-100
+Architecture: amd64
+Maintainer: Sam Varshavchik <mrsam@courier-mta.com>
+Installed-Size: 87
+Pre-Depends: libcourier-auth-config-daemon-daemon
+Depends: libcourier-auth (= 0.72.1-100), libc6 (>= 2.14), libcourier-auth0 (>= 0.72.1), libgcc-s1 (>= 3.0), libpq5, libstdc++6 (>= 5.2)
+Homepage: https://www.courier-mta.org/courier-authlib/
+Priority: optional
+Section: contrib/admin
+Filename: pool/main/c/courier-authlib/libcourier-auth-pgsql_0.72.1-100_amd64.deb
+Size: 27018
+SHA512: d0159e3facfe0ace0ba3b026667664417c70748037fcf23096a8696f6635cfc51cbce095d175b39c7477fce4e05b7f7b5e819dc1faf3f8e6d4d52643b7eda9b7
+SHA256: 6b78c24ababf4bc4adfe255357965c70f7cce6f5a376290a33580c2b97567395
+SHA1: d84f4b67b40ea961be538e3f1923cbaa759015e2
+MD5sum: 88da5693e34ccddf5cb4578dd36d75b7
+Description: PoistgreSQL support for the Courier authentication library
+ This package installs the PostgreSQL support for the Courier
+ authentication library.  Install this package in order to be able to
+ authenticate with PostgreSQL.
+
+Package: libcourier-auth-pipe
+Source: courier-authlib
+Version: 0.72.1-100
+Architecture: amd64
+Maintainer: Sam Varshavchik <mrsam@courier-mta.com>
+Installed-Size: 39
+Pre-Depends: libcourier-auth-config-daemon-daemon
+Depends: libcourier-auth (= 0.72.1-100), libc6 (>= 2.15)
+Homepage: https://www.courier-mta.org/courier-authlib/
+Priority: optional
+Section: contrib/admin
+Filename: pool/main/c/courier-authlib/libcourier-auth-pipe_0.72.1-100_amd64.deb
+Size: 7394
+SHA512: dd325cf76138650c52694569148e7de522e8fde90175a286ccb1660b765725c7a366eb9940b0c6488664b3660a3632bd8f1df683535c246e3ef2db2a17239e40
+SHA256: 2ff5ab8ec1f8a6797de377e8ed6546e64b8f88eac4bd4e26fc763e86a8b8efb7
+SHA1: bcedf253a1ba68d5ea3a09269ec82e15bb56d25b
+MD5sum: 16a6ade241abc5998c19bb5a3b57fb6a
+Description: External authentication module that communicates via pipes
+ This package installs the authpipe module, which is a generic plugin
+ that enables authentication requests to be serviced by an external
+ program, then communicates through messages on stdin and stdout.
+
+Package: libcourier-auth-sqlite
+Source: courier-authlib
+Version: 0.72.1-100
+Architecture: amd64
+Maintainer: Sam Varshavchik <mrsam@courier-mta.com>
+Installed-Size: 79
+Pre-Depends: libcourier-auth-config-daemon-daemon
+Depends: libcourier-auth (= 0.72.1-100), libc6 (>= 2.38), libcourier-auth0 (>= 0.72.1), libgcc-s1 (>= 3.0), libsqlite3-0 (>= 3.5.9), libstdc++6 (>= 5.2)
+Homepage: https://www.courier-mta.org/courier-authlib/
+Priority: optional
+Section: contrib/admin
+Filename: pool/main/c/courier-authlib/libcourier-auth-sqlite_0.72.1-100_amd64.deb
+Size: 23576
+SHA512: 70c03eff8c6b74b82f192628330b55a2d2e3a24902ea020d928324b0e4fba47e6c8d74637c2caa81724be39c3285de3981e37aee62ecf986c6b9da4a2c8b6295
+SHA256: 1f4914fbec06420cd5a71c71b08ff0018fba9f9f33f922eb99dc150b9431a77d
+SHA1: 2dff9eb3255018ee35482b12c90b15d40ceb13d8
+MD5sum: 69f4b1669c0054a3cc0a1ec6de05e49b
+Description: SQLite support for the Courier authentication library
+ This package installs the SQLite support for the Courier
+ authentication library.  Install this package in order to be able to
+ authenticate with SQLite.
+
+Package: libcourier-auth-userdb
+Source: courier-authlib
+Version: 0.72.1-100
+Architecture: amd64
+Maintainer: Sam Varshavchik <mrsam@courier-mta.com>
+Installed-Size: 98
+Pre-Depends: libcourier-auth-config-daemon-daemon
+Depends: libcourier-auth (= 0.72.1-100), libc6 (>= 2.38), libcourier-auth0 (>= 0.72.1), libcrypt1 (>= 1:4.1.0), libgdbm6t64 (>= 1.16)
+Homepage: https://www.courier-mta.org/courier-authlib/
+Priority: optional
+Section: contrib/admin
+Filename: pool/main/c/courier-authlib/libcourier-auth-userdb_0.72.1-100_amd64.deb
+Size: 34948
+SHA512: 7523d459cbb765ecc9e1b2a0e1b99c2f00ed679ad8631cf1c032467faa290c715a9920f749342dc48ed78eb7d9e0fb76354e731f9ee082a8218ddd7e9424e0c7
+SHA256: 14525371b47d22c70abb8111bdb784b4f2f2f3df9cab164d50528264a2cb14d0
+SHA1: 4f803c590fb3b7e546390e50f6b7308c693666f7
+MD5sum: 5aa4250f84309d31d3850b35712b2ccd
+Description: Userdb support for the Courier authentication library
+ This package installs the userdb support for the Courier authentication
+ library.  Userdb is a simple way to manage virtual mail accounts using
+ a GDBM-based database file.
+ Install this package in order to be able to authenticate with userdb.
+
+Package: libcourier-auth0
+Source: courier-authlib
+Version: 0.72.1-100
+Architecture: amd64
+Maintainer: Sam Varshavchik <mrsam@courier-mta.com>
+Installed-Size: 163
+Pre-Depends: libcourier-auth-config-daemon-daemon
+Depends: libc6 (>= 2.34), libcrypt1 (>= 1:4.1.0), libgcc-s1 (>= 3.0), libstdc++6 (>= 5.2)
+Homepage: https://www.courier-mta.org/courier-authlib/
+Priority: optional
+Section: contrib/admin
+Filename: pool/main/c/courier-authlib/libcourier-auth0_0.72.1-100_amd64.deb
+Size: 53504
+SHA512: 915f8545d9f09c4a12279e74b83a36f963ee0a22fba2354b5484521bf11fbb13d04c0086f0bbb3d8b0e8ae920f080f92325e9dd487d19d0339d7381f1b89d249
+SHA256: 46f54d307826d8171ec9d1ce48c197d0d462c4d5c058b4ce0dc6e276d448a310
+SHA1: c91efeca51f9bade56aabb54fc4e245498ea88ea
+MD5sum: 8cc49aac7121a79db9f11e78be638792
+Description: Courier authentication library (client library)
+ This package contains shared libraries used by authentication clients.
+
+Package: libcourier-unicode-dev
+Source: courier-unicode
+Version: 2.3.0-100
+Architecture: amd64
+Maintainer: Sam Varshavchik <mrsam@courier-mta.com>
+Installed-Size: 956
+Depends: libcourier-unicode8 (= 2.3.0-100)
+Homepage: https://www.courier-mta.org/unicode/
+Priority: optional
+Section: contrib/libdevel
+Filename: pool/main/c/courier-unicode/libcourier-unicode-dev_2.3.0-100_amd64.deb
+Size: 254100
+SHA512: 21f31eef7956361cabb67f01711f661717e27219f79e23fd3849fa8ffe819facb99bc28f6fb377225cb8e1c83485ef8ad892c8bdfad61de799dae634817f2223
+SHA256: 54e10da69e4fc56275a0d7662d10c083bf40810fcade1524edab29eb8c0597b7
+SHA1: 32ca4470f5f2e4576a4b68056ad9e04712812e90
+MD5sum: 4ffa1fea0358ca06968164489404194a
+Description: Courier Unicode Library (header files and development libraries)
+ This package contains development files for the Courier Unicode Library.
+ Install this package if you want to develop applications that uses this
+ unicode library.
+
+Package: libcourier-unicode8
+Source: courier-unicode
+Version: 2.3.0-100
+Architecture: amd64
+Maintainer: Sam Varshavchik <mrsam@courier-mta.com>
+Installed-Size: 573
+Depends: libc6 (>= 2.14), libgcc-s1 (>= 3.0), libstdc++6 (>= 11)
+Homepage: https://www.courier-mta.org/unicode/
+Priority: optional
+Section: contrib/libs
+Filename: pool/main/c/courier-unicode/libcourier-unicode8_2.3.0-100_amd64.deb
+Size: 168158
+SHA512: e6b3525963c63322aa15a030cf1b780cc5aeab87074188751f8aef0df0008af9eb88d1e7931bf7fd661bd1df5fa7c10826844ea4e76778ab1f6784d9111e05fb
+SHA256: 7c9dcb4e5d879764653586be9f49f035f1111a868d2f77aec6d148671a504b29
+SHA1: 963f2c57adac1621791cfb94564daae7d8868e2a
+MD5sum: 483511bb8664b75f0ff61d82d7e38124
+Description: Courier Unicode Library
+ This library implements several algorithms related to the Unicode
+ Standard.
+ -
+ This package installs only the run-time libraries needed by applications that
+ use this library. Install the "courier-unicode-dev" package if you want
+ to develop new applications using this library.
+

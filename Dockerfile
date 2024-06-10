@@ -1,10 +1,10 @@
 # syntax=docker/dockerfile:1
-FROM ubuntu:22.04 AS build
+FROM ubuntu:24.04 AS build
 SHELL ["/bin/bash", "-e", "-o", "pipefail", "-c"]
 
-ENV COURIER_IMAP_VER=5.2.1
-ENV COURIER_AUTHLIB_VER=0.72.0
-ENV COURIER_UNICODE_VER=2.2.6
+ENV COURIER_IMAP_VER=5.2.6
+ENV COURIER_AUTHLIB_VER=0.72.1
+ENV COURIER_UNICODE_VER=2.3.0
 
 ENV DEBIAN_FRONTEND=noninteractive
 
@@ -22,7 +22,7 @@ WORKDIR /build
 
 RUN mkdir -p deb
 
-# Tool reprepro-5.3.0 used to create personal APT does not support zstd compression.
+# Tool reprepro-5.4.4 used to create personal APT does not support zstd compression.
 ENV DEB_BUILDDEB_OPTIONS=-Zgzip
 
 # hadolint ignore=DL3003,SC2164

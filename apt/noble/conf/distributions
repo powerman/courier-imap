@@ -1,0 +1,9 @@
+Origin: Powerman
+Label: courier-imap
+Suite: stable
+Codename: noble
+Version: 24.04
+Architectures: amd64
+Components: main
+Description: Ubuntu 24.04 repository for Courier-IMAP
+SignWith: 37CED4EE1F89840BAAA5D1F5D9994ED71A6E1994
