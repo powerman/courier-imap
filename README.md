@@ -20,7 +20,7 @@ apt-get install libcourier-auth \
     libcourier-auth-pgsql       \
     libcourier-auth-pipe        \
     libcourier-auth-sqlite      \
-    libcourier-auth-userdb 
+    libcourier-auth-userdb
 ```
 
 ### Courier-IMAP
@@ -45,6 +45,6 @@ apt-get install -y gnutls-bin
   - courier-authlib 0.72.0
   - courier-unicode 2.2.6
 - Ubuntu 24.04 noble
-  - courier-imap 5.2.6
-  - courier-authlib 0.72.1
-  - courier-unicode 2.3.0
+  - courier-imap 5.2.9
+  - courier-authlib 0.72.3
+  - courier-unicode 2.3.1
