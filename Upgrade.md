@@ -2,7 +2,7 @@
 
 Update versions in `Dockerfile`, then:
 
-```
+```sh
 docker build -t courier-imap:build .
 
 rm -rf deb
@@ -12,3 +12,5 @@ docker rm $id
 
 for f in deb/*; do reprepro --basedir apt/noble includedeb noble $f; done
 ```
+
+Update versions in `README.md`.
