@@ -2,9 +2,9 @@
 FROM ubuntu:24.04 AS build
 SHELL ["/bin/bash", "-e", "-o", "pipefail", "-c"]
 
-ENV COURIER_IMAP_VER=5.2.6
-ENV COURIER_AUTHLIB_VER=0.72.1
-ENV COURIER_UNICODE_VER=2.3.0
+ENV COURIER_IMAP_VER=5.2.9
+ENV COURIER_AUTHLIB_VER=0.72.3
+ENV COURIER_UNICODE_VER=2.3.1
 
 ENV DEBIAN_FRONTEND=noninteractive
 
@@ -28,7 +28,7 @@ ENV DEB_BUILDDEB_OPTIONS=-Zgzip
 # hadolint ignore=DL3003,SC2164
 RUN wget -q http://downloads.sourceforge.net/project/courier/courier-unicode/${COURIER_UNICODE_VER}/courier-unicode-${COURIER_UNICODE_VER}.tar.bz2; \
     tar xjf courier-unicode-${COURIER_UNICODE_VER}.tar.bz2; \
-    cd courier-unicode-${COURIER_UNICODE_VER}; \ 
+    cd courier-unicode-${COURIER_UNICODE_VER}; \
     ./courier-debuild -us -uc; \
     apt-get install -y --no-install-recommends ./deb/*.deb; \
     cp deb/*.deb /build/deb/
