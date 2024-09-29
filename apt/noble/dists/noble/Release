@@ -3,23 +3,23 @@ Label: courier-imap
 Suite: stable
 Codename: noble
 Version: 24.04
-Date: Mon, 19 Aug 2024 05:54:08 UTC
+Date: Sun, 29 Sep 2024 05:34:57 UTC
 Architectures: amd64
 Components: main
 Description: Ubuntu 24.04 repository for Courier-IMAP
 MD5Sum:
- 08629e955d298a5dab4fcdb28b9c5def 13960 main/binary-amd64/Packages
- 17eb9bf3bdb0792754d4e862a6c664cc 4234 main/binary-amd64/Packages.gz
+ bea8ab1c5b6ab0d42b4ccffd9cc008ab 13962 main/binary-amd64/Packages
+ fef4a83131481db8c6179f688e00f997 4239 main/binary-amd64/Packages.gz
  3f7e5240359df6d11f14b79382c5a14f 158 main/binary-amd64/Release
 SHA1:
- ad44660a2dc28a9a14f3ba5e1daa5c0e55e68d42 13960 main/binary-amd64/Packages
- 248c71776e4851f0083dd015db07186711d5a9dd 4234 main/binary-amd64/Packages.gz
+ 87dfa88a52ed5ff6d37a08439cc8b3593c7b8d34 13962 main/binary-amd64/Packages
+ 573d57db5756f8c653f0c8fb6151d65a6a80626b 4239 main/binary-amd64/Packages.gz
  6ce381e25f0ba5804326e756febb9b83c684a297 158 main/binary-amd64/Release
 SHA256:
- b96eab78dbcbde6b9cf68927299673d45ca35992fff7943682ad5dc5ebd1fe1b 13960 main/binary-amd64/Packages
- 7742b71ab29acae4ae5c441b9369f9f1e3e6948acb2cce88eacb01383f2fa62e 4234 main/binary-amd64/Packages.gz
+ 13ba9efdb8b1d2831adca921d9acee22ffe2dcc9f0c6074135abe244940f1a56 13962 main/binary-amd64/Packages
+ 80c485fa5cbdc6cd20bc9d60bc59dcb183371758cffedd68aedba290f6070428 4239 main/binary-amd64/Packages.gz
  72687861739dfe87e1a2b3eda6722bb0e1f2dbf47716e2623f2229235d6fb699 158 main/binary-amd64/Release
 SHA512:
- d624bfc6a15e06669efd84fec33ce3a261b3ef8f9aa1f7df66ffea35ebdc5612fafb97435c5126ba8db21dbca83c21c8a416154a7923f08b70e1150c2111833d 13960 main/binary-amd64/Packages
- dbca045bf00bc56343b0dec9c5885e1182f6fb738ecb26e81655afec0b32268c5635753f55b6c7617a7c6b5848dc00260e4e40ddcb7b1eb927e19f772c3a6272 4234 main/binary-amd64/Packages.gz
+ 3174873233f1d8e4ccde36833ab5940aec1ddc2570c965e0903182173c2ed181ecf1d2434262030074ddadcc37670503ca95b644c422f97373acd26981e0305e 13962 main/binary-amd64/Packages
+ b915706b9224d15158a1e02a0695e5d6d72d1da032e002c06d5fce764bf14c1d91d1f66753cea5fb670960de02211d05be9d4cf5a57e1a1d6fccdb14d65d58b3 4239 main/binary-amd64/Packages.gz
  e5de94691ccb3e9236ecbc593aa841aac789368b7528bf157d840b62cc204ea9f9435ab663165b987a8739c86408294e5f7d6c903b10f8de94505856a061a5db 158 main/binary-amd64/Release

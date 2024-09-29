@@ -2,7 +2,7 @@
 FROM ubuntu:24.04 AS build
 SHELL ["/bin/bash", "-e", "-o", "pipefail", "-c"]
 
-ENV COURIER_IMAP_VER=5.2.9
+ENV COURIER_IMAP_VER=5.2.10
 ENV COURIER_AUTHLIB_VER=0.72.3
 ENV COURIER_UNICODE_VER=2.3.1
 

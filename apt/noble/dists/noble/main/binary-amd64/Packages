@@ -1,5 +1,5 @@
 Package: courier-imap
-Version: 5.2.9-100
+Version: 5.2.10-100
 Architecture: amd64
 Maintainer: Sam Varshavchik <mrsam@courier-mta.com>
 Installed-Size: 938
@@ -9,12 +9,12 @@ Conflicts: courier-imapd, courier-pop3d
 Homepage: https://www.courier-mta.org/imap/
 Priority: optional
 Section: contrib/admin
-Filename: pool/main/c/courier-imap/courier-imap_5.2.9-100_amd64.deb
-Size: 404052
-SHA512: 2e56d6719d0545cd5d3a9e4bcd496e7ef1074b5ab4adf80d2b6853cac550578168ed91e249b39caeda9c84691ed77d1e449a4b3f08ccbc2c1ed92cf919ec2470
-SHA256: c51e39117fe6909d60f04046f096cce7f375604ee5733dd83d424096075383a7
-SHA1: f55083e76e8101b899a0ac28aac31b3611b234f1
-MD5sum: b899caa65dc3d9a0bfab9d802f9786d6
+Filename: pool/main/c/courier-imap/courier-imap_5.2.10-100_amd64.deb
+Size: 404138
+SHA512: 0268638cfe6ed77f5c0a0deb828cc2faaba0b94d9ae8cbca93cdd9fe54d110b02594078ae3af1f871ec959f94767d934d979657cdce06519eba6c0949c89a398
+SHA256: a25a6ead7515121b3e9c6535c6fbb239a91acdae5427c4461756aef8c79e08a1
+SHA1: 8afd89b3e1a3357b98dfb127ac26f550d86ca647
+MD5sum: 30679907c631fd79ea33ec0cf9281448
 Description: Maildir IMAP Server
  Courier-IMAP is an IMAP server for Maildir mailboxes.  This package contains
  the standalone version of the IMAP server that's included in the Courier
